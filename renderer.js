@@ -15,7 +15,7 @@ bgMusic.play();
 const App = () => {
     return (
         <div className="app-frame">
-            <Welcome/>
+            <MainInterface />
         </div>
     );
 };
