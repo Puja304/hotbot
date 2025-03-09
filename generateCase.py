@@ -3,9 +3,10 @@ import json
 
 def generateCase(case_number):
     # Hardcoded case details with victims, crime details, killer etc.
-    if case_number == 1:
+    if case_number == :
         case_data = {
     "case_number": 1,
+    "victims_number": 4,
     "case_details": "James 'The Quiet' Moretti used a variety of weapons to murder four victims in personal spaces, each murder carried out with methodical precision.",
     "killer": "James 'The Quiet' Moretti",
     "weapon": "silk scarf, knife, injection",
@@ -81,6 +82,7 @@ def generateCase(case_number):
     elif case_number == 2:
         case_data = {
         "case_number": 2,
+        "victims_number": 4,
         "case_details": "Victor 'The Phantom' Frost systematically murdered four victims, each in a way that deeply affected their personal lives and passions, using intimate spaces as crime scenes and exploiting their most cherished possessions.",
         "killer": "Victor 'The Phantom' Frost",
         "weapon": "Poison, fire, suffocation with fabric (pillows), and strangulation with objects from the victims' personal lives (e.g., guitar strings, scarves)",
@@ -156,6 +158,7 @@ def generateCase(case_number):
     elif case_number == 3:
         case_data = {
         "case_number": 3,
+        "victims_number": 4,
         "case_details": "Lucinda 'The Whisperer' Voss systematically targeted professionals whose workspaces were deeply intertwined with their identities. Each victim was murdered in a location that symbolized their passion, profession, and personal life. The brutality of the killings was designed to destroy not only the victims but also the very aspects of themselves they held dear.",
         "killer": "Lucinda 'The Whisperer' Voss",
         "weapon": "Knife (for slashing throats), gun (for execution-style shooting), and blunt force trauma",
@@ -232,6 +235,7 @@ def generateCase(case_number):
     elif case_number == 4:
         case_data = {
         "case_number": 4,
+        "victims_number": 4,
         "case_details": "Daniel 'The Shadow' was a meticulous killer who targeted individuals in fields where image, control, and public personas were paramount. Each victim was murdered in a way that disrupted the essence of their professional identity, leaving a chilling imprint of control and finality. The killer's focus was on creating a symbolic death, taking away their victims' image and their ability to influence others.",
         "killer": "Daniel 'The Shadow'",
         "weapon": "Suffocation with fabric, electrocution via faulty wire, poisoning, and asphyxiation by rope",

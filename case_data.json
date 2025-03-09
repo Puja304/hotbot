@@ -1,5 +1,6 @@
 {
     "case_number": 2,
+    "victims_number": 4,
     "killer": "Victor 'The Phantom' Frost",
     "weapon": "Poison, fire, suffocation with fabric (pillows), and strangulation with objects from the victims' personal lives (e.g., guitar strings, scarves)",
     "location": "Intimate spaces (private homes, fire station, school, music studio)",
@@ -28,7 +29,7 @@
             "victim_weight": "190 lbs",
             "victim_eye": "blue",
             "victim_hair": "brown",
-            "victim_identification": "burned alive in a fire",
+            "victim_identification": "burned to death in a fire ",
             "victim_related1": "Jason, a fellow firefighter",
             "victim_related2": "Lara, his wife",
             "victim_related3": "Tom, a rookie firefighter",
