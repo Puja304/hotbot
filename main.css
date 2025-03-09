@@ -3,13 +3,53 @@
     position: fixed;
     min-height: max-content;
     top: 40px;
-    left: 10;
-    right: 10;
-    width: 45%;
+    width: 50%;
     height: 40vh;  /* Occupies 25% of the viewport height */
     z-index: 9999; /* Stay on top */
     overflow: hidden;
     box-shadow: 0 16px 0 rgba(0, 0, 0, 0.01); /* Add shadow effect */
+}
+
+/* Style for the button */
+.bottom-left-button {
+    position: fixed;
+    bottom: 0px; /* Adjust as needed */
+    left: 410px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #262730;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000; /* Ensure the button is on top */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect for the button */
+.bottom-left-button:hover {
+    background-color: #FF4B4B; /* Change background color on hover */
+    color: #262730; /* Change text color on hover */
+}
+
+/* Style for the second button */
+.bottom-left-button2 {
+    position: fixed;
+    bottom: 0px; /* Adjust as needed */
+    left: 525px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #262730;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000; /* Ensure the button is on top */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect for the second button */
+.bottom-left-button2:hover {
+    background-color: #FF4B4B; /* Change background color on hover */
+    color: #262730; /* Change text color on hover */
 }
 
 /* Default padding */
