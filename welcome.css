@@ -1,0 +1,78 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.welcome-page
+{
+    background-color: #0E1117;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-story-box
+{
+    background-color:#262730;
+    height: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(38, 39, 48, 0.1);
+    overflow-y: auto;
+}
+
+
+.welcome-story-box::-webkit-scrollbar {
+    display: none;
+}
+
+.welcome-text
+{
+    margin: 0;
+    text-align: left;
+    font-size: 400;
+    padding : 0 10% 0 10%;
+    line-height: 1.6;
+    color: #FAFAFA;
+    font-stretch: extra-expanded;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.welcome-tagline
+{
+    margin-top: 0%;
+    color: #FAFAFA;
+    font-family:sans-serif;
+    font-weight:100;
+    font-size: small;
+    font-stretch: ultra-expanded;
+}
+.welcome-start-button
+{   
+    background-color:#262730;
+    color: white;
+    margin-top: 3vh;
+    border: none;
+    box-shadow: 0 4px 20px rgba(38, 39, 48,0.1);
+    border-radius: 10px;
+    font-size: medium;
+    font-family: sans-serif;
+    padding: 1%;
+}
+
+
+.welcome-start-button:hover
+{
+    background-color: #0E1117;
+}

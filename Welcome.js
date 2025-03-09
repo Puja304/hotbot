@@ -1,10 +1,29 @@
 import React from "react";
 
-export default function Welcome()
+
+function gameStart()
 {
     return (
+        <div className="started-game-trial">
+            <h1>Started</h1>
+        </div>
+    )
+}
+
+export default function Welcome()
+{
+
+    return (
         <div className="welcome-page">
-            <h1>Welcome page</h1>
+            <div className="welcome-story-box">
+                <h1 className="welcome-text">
+                   KILLSWITCH
+                </h1>   
+                <h3 className="welcome-tagline">
+                    a funny and witty tagline
+                </h3>
+                <button className="welcome-start-button" onClick={gameStart}>start</button>
+            </div>
         </div>
     )
 }

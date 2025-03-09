@@ -3,13 +3,14 @@ import ReactDOM from "react-dom/client";
 import Welcome from "./Welcome"
 import MainInterface from "./MainInterface";
 import CaseDetails from "./CaseDetails";
+import "./welcome.css"
 
 import './style.css';  
 
 const App = () => {
     return (
         <div className="app-frame">
-            <h1>Blank pages</h1>
+            <Welcome/>
         </div>
     );
 };
