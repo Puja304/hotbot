@@ -10,7 +10,7 @@ import './style.css';
 const App = () => {
     return (
         <div className="app-frame">
-            <Welcome/>
+            <MainInterface />
         </div>
     );
 };
