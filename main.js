@@ -10,7 +10,8 @@ app.whenReady().then(() => {
             nodeIntegration: true
         }
     });
-
+    
+    mainWindow.maximize()
     mainWindow.loadFile('index.html');
     
     mainWindow.on('closed', () => {
