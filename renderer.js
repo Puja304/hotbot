@@ -7,15 +7,15 @@ import "./welcome.css"
 
 import './style.css';  
 
-const bgMusic = new Audio("./assets/music.mp3");
+const bgMusic = new Audio("./music/haunted-forest-309396.mp3");
 bgMusic.loop = true;
-bgMusic.volume = 0.5;
+bgMusic.volume = 0.3;
 bgMusic.play();
 
 const App = () => {
     return (
         <div className="app-frame">
-            <MainInterface />
+            <Welcome />
         </div>
     );
 };
