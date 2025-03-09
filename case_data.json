@@ -1,0 +1,73 @@
+{
+    "case_number": 2,
+    "killer": "Victor 'The Phantom' Frost",
+    "weapon": "Poison, fire, suffocation with fabric (pillows), and strangulation with objects from the victims' personal lives (e.g., guitar strings, scarves)",
+    "location": "Intimate spaces (private homes, fire station, school, music studio)",
+    "motive": "Victor\u2019s motive stems from a twisted need to destroy the very things his victims held dear, exploiting their professions and passions before ending their lives.",
+    "victims": [
+        {
+            "victim_name": "Olivia Brooks",
+            "victim_age": 29,
+            "victim_height": "5'7\"",
+            "victim_weight": "135 lbs",
+            "victim_eye": "brown",
+            "victim_hair": "black",
+            "victim_identification": "suffocated with a silk pillowcase",
+            "victim_related1": "Jake, her ex-boyfriend",
+            "victim_related2": "Mason, her assistant",
+            "victim_related3": "Vera, her mentor",
+            "victim_desc": "Olivia Brooks, age 29, with brown eyes and black hair, was found in her boutique, suffocated with a silk pillowcase. Her body was arranged carefully, her hands folded as if she were just resting.",
+            "victim_relation_desc1": "Jake, her ex-boyfriend, was still angry about their breakup and had threatened Olivia several times. He was deeply possessive and often expressed his frustration over their separation.",
+            "victim_relation_desc2": "Mason, her assistant, had a hidden crush on Olivia, which he never confessed. He was seen arguing with her just a day before her death about her choice of a new design direction.",
+            "victim_relation_desc3": "Vera, her mentor, had been critical of Olivia\u2019s designs in the past. They had a complicated professional relationship filled with jealousy and admiration, with Vera often undermining Olivia's successes."
+        },
+        {
+            "victim_name": "Derek Fisher",
+            "victim_age": 34,
+            "victim_height": "6'1\"",
+            "victim_weight": "190 lbs",
+            "victim_eye": "blue",
+            "victim_hair": "brown",
+            "victim_identification": "burned alive in a fire",
+            "victim_related1": "Jason, a fellow firefighter",
+            "victim_related2": "Lara, his wife",
+            "victim_related3": "Tom, a rookie firefighter",
+            "victim_desc": "Derek Fisher, age 34, with blue eyes and brown hair, was found in his fire station, burned alive. His body was discovered in the basement, his clothing charred beyond recognition.",
+            "victim_relation_desc1": "Jason, a fellow firefighter, was seen arguing with Derek about a leadership position. Their rivalry had been escalating for weeks, with Jason feeling overlooked for promotions.",
+            "victim_relation_desc2": "Lara, Derek\u2019s wife, had an affair with a colleague of Derek\u2019s, which Derek recently found out about. This revelation caused a strain in their marriage, leading to heated arguments.",
+            "victim_relation_desc3": "Tom, a rookie firefighter, had a complicated relationship with Derek. Often feeling overshadowed by Derek's experience, Tom resented him for constantly being in the spotlight."
+        },
+        {
+            "victim_name": "Lily Grant",
+            "victim_age": 41,
+            "victim_height": "5'5\"",
+            "victim_weight": "140 lbs",
+            "victim_eye": "green",
+            "victim_hair": "red",
+            "victim_identification": "poisoned with an unknown substance",
+            "victim_related1": "Henry, a student",
+            "victim_related2": "Jennifer, her fellow teacher",
+            "victim_related3": "Charlie, her ex-husband",
+            "victim_desc": "Lily Grant, age 41, with green eyes and red hair, was found in her school\u2019s library, poisoned. Her body was cold and lifeless, with a book on the floor next to her. A chilling note was left inside the book.",
+            "victim_relation_desc1": "Henry, a student, had a fascination with Lily, often writing her strange letters and poems. His obsession grew over time, and many worried about his fixation on her.",
+            "victim_relation_desc2": "Jennifer, her fellow teacher, was jealous of Lily\u2019s popularity among students. They had a public confrontation in front of the faculty, with Jennifer accusing Lily of undermining her professional achievements.",
+            "victim_relation_desc3": "Charlie, her ex-husband, had been trying to rekindle their relationship, but Lily had refused. He was seen outside her school just days before her death, expressing his frustration with her rejections."
+        },
+        {
+            "victim_name": "Ethan Harper",
+            "victim_age": 25,
+            "victim_height": "5'9\"",
+            "victim_weight": "160 lbs",
+            "victim_eye": "hazel",
+            "victim_hair": "blonde",
+            "victim_identification": "strangled with his own guitar strings",
+            "victim_related1": "Rachel, his bandmate",
+            "victim_related2": "Aaron, his manager",
+            "victim_related3": "Kara, his childhood friend",
+            "victim_desc": "Ethan Harper, age 25, with hazel eyes and blonde hair, was found in his home, strangled with his own guitar strings. His guitar was left in a position as if it had been used to play one final song.",
+            "victim_relation_desc1": "Rachel, his bandmate, was often in conflict with Ethan about their musical direction. She was also rumored to have had a romantic interest in him, which added tension to their relationship.",
+            "victim_relation_desc2": "Aaron, his manager, was involved in financial disputes with Ethan regarding unpaid royalties. Ethan had refused to perform unless the contracts were renegotiated.",
+            "victim_relation_desc3": "Kara, his childhood friend, had recently confronted Ethan about a betrayal. She felt he had forgotten their shared past, and their friendship had soured as a result."
+        }
+    ]
+}

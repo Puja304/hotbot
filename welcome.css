@@ -1,8 +1,23 @@
+@font-face {
+    font-family: 'Pixelated';
+    src: url('./fonts/pixelated/HomeVideo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@keyframes glow {
+    0% { box-shadow: -10px 0px 20px red, 10px 0px 20px red; }
+    50% { box-shadow: -10px 0px 30px red, 10px 0px 30px red; }
+    100% { box-shadow: -10px 0px 20px red, 10px 0px 20px red; }
+}
+
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    z-index: -2;
 }
 
 .welcome-page
@@ -21,14 +36,14 @@ html, body {
 .welcome-story-box
 {
     background-color:#262730;
-    height: 75%;
+    height: 60%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(38, 39, 48, 0.1);
+    /*box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.6) inset;*/
     overflow-y: auto;
 }
 
@@ -41,38 +56,30 @@ html, body {
 {
     margin: 0;
     text-align: left;
-    font-size: 400;
     padding : 0 10% 0 10%;
     line-height: 1.6;
     color: #FAFAFA;
     font-stretch: extra-expanded;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Pixelated';
+    font-size: 80px;
 }
 
-.welcome-tagline
-{
-    margin-top: 0%;
-    color: #FAFAFA;
-    font-family:sans-serif;
-    font-weight:100;
-    font-size: small;
-    font-stretch: ultra-expanded;
-}
 .welcome-start-button
 {   
-    background-color:#262730;
-    color: white;
+    background-color:#FF4B4B;
+    color: #262730;
     margin-top: 3vh;
     border: none;
     box-shadow: 0 4px 20px rgba(38, 39, 48,0.1);
     border-radius: 10px;
-    font-size: medium;
-    font-family: sans-serif;
+    font-size: x-large;
+    font-family: 'Pixelated', sans-serif;
     padding: 1%;
 }
 
 
 .welcome-start-button:hover
 {
+    color:#FF4B4B;
     background-color: #0E1117;
 }

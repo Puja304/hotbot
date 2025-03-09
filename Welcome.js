@@ -19,9 +19,6 @@ export default function Welcome()
                 <h1 className="welcome-text">
                    KILLSWITCH
                 </h1>   
-                <h3 className="welcome-tagline">
-                    a funny and witty tagline
-                </h3>
                 <button className="welcome-start-button" onClick={gameStart}>start</button>
             </div>
         </div>

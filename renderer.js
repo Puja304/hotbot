@@ -7,6 +7,11 @@ import "./welcome.css"
 
 import './style.css';  
 
+const bgMusic = new Audio("./assets/music.mp3");
+bgMusic.loop = true;
+bgMusic.volume = 0.5;
+bgMusic.play();
+
 const App = () => {
     return (
         <div className="app-frame">
