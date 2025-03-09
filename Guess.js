@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from "react";
 import "./guess.css"
 import Victory from "./Victory";
 
-export default function Guess({killer, weapon, location, time, alibi}) {
+export default function Guess({killer, weapon, location}) {
 
     const [guessButton, setGuessButton] = useState(false);
     const [isOn, setIsOn] = useState(true);
@@ -45,8 +45,6 @@ export default function Guess({killer, weapon, location, time, alibi}) {
     const [userKiller, setKiller] = useState("");
     const [userWeapon, setWeapon] = useState("");
     const [userLocation, setLocation] = useState("");
-    const [userTime, setTime] = useState("");
-    const [userAlibi, setAlibi] = useState("");
     const [notification, setNotification] = useState(false);
 
     const showNotification = (message) => {
@@ -75,9 +73,7 @@ export default function Guess({killer, weapon, location, time, alibi}) {
     {
       if ((userKiller == killer) &&
       (userWeapon == weapon) &&
-      (userLocation == location) &&
-      (userTime == time) &&
-      (userAlibi == alibi)
+      (userLocation == location)
       )
       {
         toggleGuess();
@@ -122,14 +118,6 @@ export default function Guess({killer, weapon, location, time, alibi}) {
             <div className="guess-form-pair">
                 <label for="Name">Location:</label>
                 <input type='text' id="Location" value={userLocation} onChange={(e) => setLocation(e.target.value)}></input>
-            </div>
-            <div className="guess-form-pair">
-                <label for="Name">Time:</label>
-                <input type='text' id="Time" value={userTime} onChange={(e) => setTime(e.target.value)}></input>
-            </div>
-            <div className="guess-form-pair">
-                <label for="Name">Alibi:</label>
-                <input type='text' id="Alibi" value={userAlibi} onChange={(e) => setAlibi(e.target.value)}></input>
             </div>
           </form>
           <button type="submit" className="guess-submit" onClick={assessVictory}>Submit</button>
