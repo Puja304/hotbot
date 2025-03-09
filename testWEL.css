@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Pixelated';
+    src: url('./fonts/pixelated/HomeVideo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Glow animation for the box border (outside + inside) */
+@keyframes glow {
+    0% { 
+        box-shadow: 
+            0 0 20px rgba(127, 13, 13, 0.9), 
+            0 0 40px rgba(78, 6, 6, 0.9),
+            inset 30px 0 20px rgba(127, 13, 13, 0.9), 
+            inset -30px 0 20px rgba(127, 13, 13, 0.9);
+    }
+    50% { 
+        box-shadow: 
+            0 0 30px rgba(127, 13, 13, 0.9), 
+            0 0 60px rgba(78, 6, 6, 0.9),
+            inset 40px 0 30px rgba(127, 13, 13, 0.9), 
+            inset -40px 0 30px rgba(127, 13, 13, 0.9);
+    }
+    100% { 
+        box-shadow: 
+            0 0 20px rgba(127, 13, 13, 0.9), 
+            0 0 40px rgba(78, 6, 6, 0.9),
+            inset 30px 0 20px rgba(127, 13, 13, 0.9), 
+            inset -30px 0 20px rgba(127, 13, 13, 0.9);
+    }
+}
+
+/* Twinkling stars animation for the background */
+@keyframes starTwinkle {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+/* Reset browser defaults */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    z-index: -2;
+}
+
+/* Full-screen dark background with star effect */
+.welcome-page {
+    background-color: #0E1117;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* For star overflow */
+}
+
+/* The main box that mimics a retro “start game” button */
+.welcome-story-box {
+    position: relative;
+    background-color: #262730;
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Remove solid border and rely on glow effect */
+    border: none;
+    border-radius: 10px; 
+    animation: glow 2s infinite; /* Red glow animation */
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Hide scrollbar on the box (if content overflows) */
+.welcome-story-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* The large retro/pixelated text inside the box */
+.welcome-text {
+    margin: 0;
+    text-align: center; /* Center for that “start screen” vibe */
+    line-height: 1.2;
+    color: #FAFAFA;
+    font-family: 'Pixelated';
+    font-size: 80px;
+    font-stretch: extra-expanded;
+}
+
+/* The Start button */
+.welcome-start-button {
+    background-color: #FF4B4B;
+    color: #262730;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px; /* Keep corners sharp for pixel style */
+    box-shadow: 0 4px 20px rgba(38, 39, 48, 0.1);
+    font-size: 1.5rem;
+    font-family: 'Pixelated', sans-serif;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+/* Hover effect: invert colors */
+.welcome-start-button:hover {
+    color: #FF4B4B;
+    background-color: #0E1117;
+}
+
+/* The star elements scattered across the background */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: starTwinkle 3s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-story-box {
+        width: 80%;
+        height: 45%;
+    }
+    .welcome-text {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-story-box {
+        width: 90%;
+        height: 50%;
+        padding: 15px;
+    }
+    .welcome-text {
+        font-size: 32px;
+    }
+    .welcome-start-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
