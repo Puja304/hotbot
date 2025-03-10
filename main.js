@@ -12,7 +12,7 @@ app.whenReady().then(() => {
     });
     
     mainWindow.maximize()
-    mainWindow.loadFile('index.html');
+    mainWindow.loadFile('/build/index.html');
     
     mainWindow.on('closed', () => {
         mainWindow = null;
