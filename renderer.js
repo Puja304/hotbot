@@ -16,10 +16,11 @@ bgMusic.play();
 const App = () => {
     return (
         <div className="app-frame">
-            <Guess
+            {/* <Guess
             killer="killer"
             weapon="weapon"
-            location="location" />
+            location="location" /> */}
+            <Guess />
         </div>
     );
 };
