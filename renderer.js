@@ -20,7 +20,11 @@ const App = () => {
             killer="killer"
             weapon="weapon"
             location="location" /> */}
+<<<<<<< HEAD
             <Welcome />
+=======
+            <Guess />
+>>>>>>> 5b9a1de934b4ed52722f73350a5c2b4d66beff1b
         </div>
     );
 };
