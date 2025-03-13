@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Pixelated';
+    src: url('./fonts/pixelated/HomeVideo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.guess-main-body
+{
+    position: fixed;              
+    top: 50%;                       
+    left: 50%;                      
+    width: 50vw;                 
+    height: 50vh;
+    min-height: max-content;     
+    background-color: #262730;      
+    transform: translate(-50%, -50%); 
+    padding: 20px;               
+    border-radius: 10px;        
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess-pop-up
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.guess-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                 /*  Adds space between form elements*/
+    width: 100%;
+    max-width: 400px;            /* Limits the form width */
+    background-color: #262730;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    margin: auto;            /* Centers the form horizontally */
+    margin-bottom : 2vh;
+}
+
+.guess-form-pair {
+    width: 180%;
+    display: flex;
+    margin-left: -10vw;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;                  /* Adds space between label and input */
+}
+
+.guess-form label {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.guess-form input {
+    min-width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.guess-form input:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.7); /* Add a glow effect on focus */
+}
+
+.guess-form input::placeholder {
+    color: #bbb;                /* Lighter placeholder text */
+}
+
+.guess-main-body button {
+    padding: 12px 24px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 60%;
+}
+
+.guess-main-body button:hover{
+    background-color: #e63946;
+}
+
+.guess-close
+{
+    background-color: #262730 !important;
+    display: flex;
+    justify-content: right;
+
+}
+
+.guess-pop-up button
+{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.guess-close-div
+{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 196%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0;
+}
+
+.guess-title
+{
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000; /* Ensure it's above everything */
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}

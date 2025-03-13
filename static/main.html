@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Bot</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <div class="fixed-top-photo">
+        <img src="https://i.imgur.com/oYL8R8M.png" style="width:100%; height:100%;" alt="Header Image">
+    </div>
+    <div class="button">
+        <button class="bottom-left-button">Case Files</button>
+    </div>
+    <div class="button2">
+        <button class="bottom-left-button2" onclick="loadGuessPage()">Guess</button>
+    </div>
+
+    <script>
+        function loadGuessPage() {
+            var script = document.createElement('script');
+            script.src = '/static/Guess.js';
+            script.type = 'text/babel';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
